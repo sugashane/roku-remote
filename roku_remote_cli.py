@@ -4,7 +4,7 @@ import keyboard
 
 from roku import Roku
 
-ROKU_IP = "192.168.68.106"
+ROKU_IP = "192.168.0.96"
 roku = Roku(ROKU_IP)
 
 
