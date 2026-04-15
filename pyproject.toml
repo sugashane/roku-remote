@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roku-remote"
+version = "0.1.0"
+description = "Roku remote tools with a PyQt GUI application."
+requires-python = ">=3.10"
+dependencies = [
+    "PyQt6>=6.7,<7",
+    "roku>=4.1,<5",
+]
+
+[project.optional-dependencies]
+macos-app = [
+    "pyinstaller>=6,<7",
+]
+
+[project.scripts]
+roku-remote = "roku_remote:main"
+
+[tool.setuptools]
+py-modules = ["roku_remote"]
